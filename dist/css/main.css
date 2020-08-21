@@ -169,8 +169,8 @@ main {
     margin: auto;
     border-radius: 50%;
     border: #eece1a 3px solid;
-    width: 250px;
-    height: 250px; }
+    width: 240px;
+    height: 240px; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.3rem; }
@@ -180,12 +180,26 @@ main {
     grid-area: job2; }
   .about-info .job-3 {
     grid-area: job3; }
+  .about-info .company {
+    text-align: center;
+    text-decoration: underline; }
+  .about-info .position {
+    text-align: center;
+    margin: .9em;
+    color: #eece1a;
+    background-color: #494949; }
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    border-bottom: #eece1a 25px solid; }
   .about-info .descriptions {
-    list-style: "☞ "; }
+    list-style: "☞ ";
+    text-align: left; }
+    .about-info .descriptions:hover {
+      color: #eece1a;
+      transition: all 0.5s ease-out; }
+    .about-info .descriptions .bullet {
+      padding-bottom: .4em; }
 
 #main-footer {
   text-align: center;

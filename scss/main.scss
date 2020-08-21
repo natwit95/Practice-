@@ -83,22 +83,25 @@ main {
     'bioimage bio bio'
     'job1 job2 job3';
     grid-template-columns: repeat(3,  1fr);
+    
     .bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
     border: $secondary-color 3px solid;
-    width: 250px;
-    height: 250px;
+    width: 240px;
+    height: 240px;
 }
 
     .bio {
         grid-area: bio;
         font-size: 1.3rem;
+        
     }
 
     .job-1 {
         grid-area: job1;
+        
     }
 
     .job-2 {
@@ -108,15 +111,40 @@ main {
     .job-3 {
         grid-area: job3;
     }
+    
+    .company {
+        
+        // color: $secondary-color;
+        text-align: center;
+        text-decoration: underline;
+        
+    }
 
+    .position {
+           text-align: center; 
+           margin: .9em;
+           color: $secondary-color;
+           background-color: lighten($primary-color, $amount: 2);
+           
+        }
     .job {
         background: lighten($primary-color, 5);
         padding: 0.5rem;
-        border-bottom: $secondary-color 5px solid;
+        border-bottom: $secondary-color 25px solid;
+        
+       
     }
     .descriptions {
         list-style: "☞ ";
-
+        text-align: left;
+       
+        &:hover {
+                color: $secondary-color;
+                @include easeOut()
+            }
+            .bullet {
+                 padding-bottom: .4em;
+            }
     }
 }
 
