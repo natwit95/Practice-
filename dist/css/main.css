@@ -163,7 +163,8 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(3, 1fr);
+  padding: .5em; }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
@@ -190,7 +191,7 @@ main {
     background-color: #494949; }
   .about-info .job {
     background: #515151;
-    padding: 0.5rem;
+    padding: .8rem;
     border-bottom: #eece1a 25px solid; }
   .about-info .descriptions {
     list-style: "☞ ";

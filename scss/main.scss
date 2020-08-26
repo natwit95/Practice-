@@ -83,6 +83,7 @@ main {
     'bioimage bio bio'
     'job1 job2 job3';
     grid-template-columns: repeat(3,  1fr);
+    padding: .5em;
     
     .bio-image {
     grid-area: bioimage;
@@ -129,7 +130,7 @@ main {
         }
     .job {
         background: lighten($primary-color, 5);
-        padding: 0.5rem;
+        padding: .8rem;
         border-bottom: $secondary-color 25px solid;
         
        
