@@ -4,6 +4,7 @@
   "description": "responsive portfolio website",
   "main": "index.js",
   "dependencies": {
+    "emailjs-com": "^2.6.3",
     "node-sass": "^4.14.1"
   },
   "devDependencies": {},
