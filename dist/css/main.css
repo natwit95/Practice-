@@ -214,6 +214,11 @@ main {
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
 
+.contact-form {
+  width: 85%;
+  max-width: 600px;
+  background: #eece1a; }
+
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
