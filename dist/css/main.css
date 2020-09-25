@@ -215,9 +215,10 @@ main {
       transition: all 0.5s ease-out; }
 
 /* Changes Entire Color Scheme */
-.roundedborder, form {
+.roundedborder, form, input[type='text'], [type='email'], textarea, input[type='submit'] {
   border-radius: 0.2em;
-  border: 2px solid; }
+  border: 2px solid;
+  border-color: #eece1a; }
 
 form {
   font-size: 1.2em;
@@ -225,7 +226,45 @@ form {
   padding: 2em;
   width: 50%;
   background: url(../img/background12.jpeg);
-  font-family: Century Gothic; }
+  font-family: Century; }
+
+/* Text Input */
+input[type='text'], [type='email'], textarea {
+  background-color: #737373;
+  color: #afa294;
+  font-size: 2em;
+  margin: .2em 0 1em;
+  padding: .25em;
+  width: 100%;
+  resize: vertical;
+  border-color: #eece1a; }
+
+/* Submit Button */
+input[type='submit'] {
+  border: 3px solid #676767;
+  background-color: #8d8d8d;
+  cursor: pointer;
+  color: white;
+  float: right;
+  font-size: 1.5em;
+  padding: .25em 1em; }
+
+input[type='submit']:hover {
+  background-color: #737373; }
+
+::-webkit-input-placeholder {
+  color: #afa294; }
+
+:-moz-placeholder {
+  color: #afa294; }
+
+/* FF 18 */
+::-moz-placeholder {
+  color: #afa294; }
+
+/* FF 19+ */
+:-ms-input-placeholder {
+  color: #afa294; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
