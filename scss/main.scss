@@ -172,9 +172,9 @@ $bg: #987;  /* Changes Entire Color Scheme */
 
 
 .roundedborder {
- border-radius: (.2em);
+ border-radius: .2em;
   border: 2px solid; 
-  border-color: $secondary-color;
+  border: none;
 }
 form {
  font-size:1.2em; 
@@ -184,7 +184,7 @@ form {
   width:50%;
   background: $test-image ;
   font-family: Century;
- 
+ box-shadow: 15px 15px 1px $secondary-color, 15px 15px 1px 2px black;
  
 //make form color transparent and resposive 
 //form should look good on a mobile phone
@@ -222,9 +222,14 @@ input[type='submit'] {
   background-color:lighten(gray, 5%);
   cursor:pointer;
   color:lighten(gray,50%);
-  float:right;
+//   float:right;
   font-size:1.5em;
   padding: .25em 1em;
+ 
+  
+  
+
+  
 //   @include text-shadow(.1em .1em .2em #333);
 }
 
