@@ -214,10 +214,18 @@ main {
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
 
-.contact-form {
-  width: 85%;
-  max-width: 600px;
-  background: #eece1a; }
+/* Changes Entire Color Scheme */
+.roundedborder, form {
+  border-radius: 0.2em;
+  border: 2px solid; }
+
+form {
+  font-size: 1.2em;
+  margin: 2em auto;
+  padding: 2em;
+  width: 50%;
+  background: url(../img/background12.jpeg);
+  font-family: Century Gothic; }
 
 .btn, .btn-dark, .btn-light {
   display: block;

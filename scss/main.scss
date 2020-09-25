@@ -168,10 +168,22 @@ main {
     }
 }
 //Contact Page
-.contact-form {
-  width: 85%;
-  max-width: 600px;
-  background: $secondary-color;
+$bg: #987;  /* Changes Entire Color Scheme */
+
+
+.roundedborder {
+ border-radius: (.2em);
+  border: 2px solid 
+}
+form {
+ font-size:1.2em; 
+  margin: 2em auto; 
+  @extend .roundedborder; 
+  padding:2em;
+  width:50%;
+  background: $test-image; 
+ 
+  font-family:Century Gothic;
  
  
 //make form color transparent and resposive 
