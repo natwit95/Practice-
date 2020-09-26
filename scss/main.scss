@@ -204,17 +204,7 @@ input[type='text'],[type='email'], textarea {
   resize: vertical;
   border-color: $secondary-color;
 }
-// textarea {
-//   @extend .roundedborder;
-//   background-color: darken(gray, 5%);
-//   color: lighten(gray, 10%);
-//   font-size:1em;
-//   height:10em;
-//   margin:.5em 0 1em;
-//   padding:1em;
-//   width:100%;
-//   resize: vertical
-// }
+
 
 /* Submit Button */
 input[type='submit'] {
@@ -230,7 +220,7 @@ input[type='submit'] {
   
 
   
-//   @include text-shadow(.1em .1em .2em #333);
+
 }
 
 
