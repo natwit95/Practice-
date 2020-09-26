@@ -158,7 +158,7 @@ main {
     img {
         width: 100%;
         border: 3px #fff solid;
-
+        height: 200px;
         &:hover {
             opacity: 0.5;
             border-color: $secondary-color;
@@ -174,7 +174,7 @@ $bg: #987;  /* Changes Entire Color Scheme */
 .roundedborder {
  border-radius: .2em;
   border: 2px solid; 
-  border: none;
+//   border: none;
 }
 form {
  font-size:1.2em; 
@@ -185,6 +185,7 @@ form {
   background: $test-image ;
   font-family: Century;
  box-shadow: 15px 15px 1px $secondary-color, 15px 15px 1px 2px black;
+ border-color: black;
  
 //make form color transparent and resposive 
 //form should look good on a mobile phone
@@ -222,7 +223,6 @@ input[type='submit'] {
   background-color:lighten(gray, 5%);
   cursor:pointer;
   color:lighten(gray,50%);
-//   float:right;
   font-size:1.5em;
   padding: .25em 1em;
  
