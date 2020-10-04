@@ -130,7 +130,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.3); }
+    background: rgba(73, 73, 73, 0.2); }
 
 a {
   color: #fff;
@@ -275,6 +275,9 @@ input[type='submit']:hover {
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #eece1a;
     color: set-text-color #eece1a; }
+
+.VueCarousel-wrapper {
+  background: rgba(73, 73, 73, 0.2); }
 
 .btn-dark {
   background: black;
