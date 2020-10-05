@@ -140,28 +140,29 @@ transition: .3all;
            text-align: center; 
            margin: .3em;
            color: $secondary-color;
-           background-color: lighten($primary-color, $amount: 2);
+           background-color: #515430;
  
         }
     .job {
-        background: lighten($primary-color, 5);
+        background: #515444;
         padding: .8rem;
         border-bottom: $secondary-color 25px solid;
         
        
     }
-    .descriptions {
-        list-style: "☞ ";
-        text-align: left;
+    // .descriptions {
+    //     list-style: "☞ ";
+    //     text-align: left;
        
-        &:hover {
-                color: $secondary-color;
-                @include easeOut()
-            }
-            .bullet {
-                 padding-bottom: .4em;
-            }
-    }
+    //     &:hover {
+    //             color: $secondary-color;
+    //             @include easeOut()
+    //         }
+    //         .bullet {
+    //              padding-bottom: .4em;
+    //         }
+    // }
+    @include bullets;
 }
 
 // WORK// Projects
@@ -170,6 +171,12 @@ transition: .3all;
     grid-gap: 0.7rem;
     grid-template-columns: repeat(3, 1fr);
     // align-content: center;
+    // justify-items: center;
+    
+    .item {
+        //background color
+    }
+    
     img {
         width: 100%;
         border: 3px #fff solid;
@@ -181,6 +188,7 @@ transition: .3all;
             @include easeOut;
         }
     }
+    @include bullets;
 }
 //Contact Page
 $bg: #987;  /* Changes Entire Color Scheme */

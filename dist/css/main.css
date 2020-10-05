@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* Chrome 10-25, Safari 5.1-6 */
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -96,7 +98,7 @@
   box-sizing: border-box; }
 
 body {
-  background: url(../img/background12.jpeg);
+  background: linear-gradient(to bottom, #3e5151, #decba4);
   color: #fff;
   height: 100%;
   margin: 0;
@@ -198,9 +200,9 @@ main {
     text-align: center;
     margin: .3em;
     color: #eece1a;
-    background-color: #494949; }
+    background-color: #515430; }
   .about-info .job {
-    background: #515151;
+    background: #515444;
     padding: .8rem;
     border-bottom: #eece1a 25px solid; }
   .about-info .descriptions {
@@ -224,6 +226,14 @@ main {
       opacity: 0.5;
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
+  .projects .descriptions {
+    list-style: "☞ ";
+    text-align: left; }
+    .projects .descriptions:hover {
+      color: #eece1a;
+      transition: all 0.5s ease-out; }
+    .projects .descriptions .bullet {
+      padding-bottom: .4em; }
 
 /* Changes Entire Color Scheme */
 .roundedborder, form, input[type='text'], [type='email'], textarea, input[type='submit'] {
@@ -235,7 +245,7 @@ form {
   margin: 2em auto;
   padding: 2em;
   width: 50%;
-  background: url(../img/background12.jpeg);
+  background: linear-gradient(to bottom, #3e5151, #decba4);
   font-family: Century;
   box-shadow: 15px 15px 1px #eece1a, 15px 15px 1px 2px black;
   border-color: black; }
@@ -303,10 +313,6 @@ input[type='submit']:hover {
   background: #2b2b2b;
   color: #fff;
   height: 60px; }
-
-@media screen and (min-width: 1171px) {
-  .projects {
-    grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 768px) {
   .projects {
