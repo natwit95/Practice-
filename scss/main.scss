@@ -78,7 +78,7 @@ main {
 
 .about-info {
     display: grid;
-    grid-gap: 30px;
+    gap: 50px 30px;
     grid-template-areas: 
     'bioimage bio bio'
     'job1 job2 job3';
@@ -102,10 +102,6 @@ main {
 
     .job-1 {
         grid-area: job1;
-      
-        
-        
-        
     }
 
     .job-2 {
@@ -125,13 +121,27 @@ main {
         text-decoration: underline;
         
     }
+    .company-logo {
+       width: 100px;
+       
+    height: 100px;
+    right: 50%;
+       border-radius: 50px;
+    //    margin-right: 20px;
+        margin-left: 34%;
+    margin-top: -21%;
+              &:hover {
+               transform: translateY(-5px);
+transition: .3all;
+           }
+      }
 
     .position {
            text-align: center; 
-           margin: .9em;
+           margin: .3em;
            color: $secondary-color;
            background-color: lighten($primary-color, $amount: 2);
-           
+ 
         }
     .job {
         background: lighten($primary-color, 5);
@@ -244,7 +254,7 @@ input[type='submit']:hover {background-color:darken(gray,5%);}
 //Button Styles 
 
 .btn {
-    display: inline-block;
+    display: block;
     padding: 0.5rem 1rem;
     border: 0;
     margin-bottom: 0.3rem;

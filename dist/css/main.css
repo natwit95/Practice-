@@ -161,7 +161,7 @@ main {
 
 .about-info {
   display: grid;
-  grid-gap: 30px;
+  gap: 50px 30px;
   grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr);
   padding: .5em; }
@@ -184,9 +184,19 @@ main {
   .about-info .company {
     text-align: center;
     text-decoration: underline; }
+  .about-info .company-logo {
+    width: 100px;
+    height: 100px;
+    right: 50%;
+    border-radius: 50px;
+    margin-left: 34%;
+    margin-top: -21%; }
+    .about-info .company-logo:hover {
+      transform: translateY(-5px);
+      transition: .3all; }
   .about-info .position {
     text-align: center;
-    margin: .9em;
+    margin: .3em;
     color: #eece1a;
     background-color: #494949; }
   .about-info .job {
