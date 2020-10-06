@@ -189,10 +189,9 @@ main {
   .about-info .company-logo {
     width: 100px;
     height: 100px;
-    right: 50%;
     border-radius: 50px;
-    margin-left: 34%;
-    margin-top: -21%; }
+    margin-top: -21%;
+    border: solid; }
     .about-info .company-logo:hover {
       transform: translateY(-5px);
       transition: .3all; }
