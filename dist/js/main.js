@@ -7,6 +7,7 @@ const menu = document.querySelector('.menu')
 const menuNav = document.querySelector('.menu-nav');
 const menuBranding = document.querySelector('.menu-branding')
 const navItems = document.querySelectorAll('.nav-item')
+const infoBtn = document.querySelectorAll(".show-more");
 
 //Setting Initial State of Menu 
 
@@ -34,3 +35,6 @@ function toggleMenu() {
         showMenu = false
     }
 }
+
+// var infoBtn = document.getElementsByClassName("collapsible");
+

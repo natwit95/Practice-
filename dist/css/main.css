@@ -163,7 +163,7 @@ main {
 
 .about-info {
   display: grid;
-  gap: 50px 30px;
+  gap: 70px 30px;
   grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr);
   padding: .5em; }
@@ -233,6 +233,9 @@ main {
       transition: all 0.5s ease-out; }
     .projects .descriptions .bullet {
       padding-bottom: .4em; }
+
+.show-more {
+  margin-bottom: 1rem; }
 
 /* Changes Entire Color Scheme */
 .roundedborder, form, input[type='text'], [type='email'], textarea, input[type='submit'] {

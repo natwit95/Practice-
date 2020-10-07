@@ -78,7 +78,7 @@ main {
 
 .about-info {
     display: grid;
-    gap: 50px 30px;
+    gap: 70px 30px;
     grid-template-areas: 
     'bioimage bio bio'
     'job1 job2 job3';
@@ -152,18 +152,7 @@ transition: .3all;
         
        
     }
-    // .descriptions {
-    //     list-style: "☞ ";
-    //     text-align: left;
-       
-    //     &:hover {
-    //             color: $secondary-color;
-    //             @include easeOut()
-    //         }
-    //         .bullet {
-    //              padding-bottom: .4em;
-    //         }
-    // }
+   
     @include bullets;
 }
 
@@ -189,9 +178,14 @@ transition: .3all;
             
             @include easeOut;
         }
+        
     }
     @include bullets;
 }
+
+.show-more {
+            margin-bottom: 1rem;
+        }
 //Contact Page
 $bg: #987;  /* Changes Entire Color Scheme */
 
