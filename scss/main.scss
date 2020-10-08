@@ -200,10 +200,10 @@ form {
   margin: 2em auto; 
   @extend .roundedborder; 
   padding:2em;
-  width:50%;
+//   width: 50vh;
   background: $test-image ;
   font-family: Century;
- box-shadow: 15px 15px 1px $secondary-color, 15px 15px 1px 2px black;
+//  box-shadow: 15px 15px 1px $secondary-color, 15px 15px 1px 2px black;
  border-color: black;
  
 //make form color transparent and resposive 
@@ -214,11 +214,12 @@ form {
 /* Text Input */
 input[type='text'],[type='email'], textarea {
   @extend .roundedborder;
-  background-color: darken(gray, 5%);
+  background-color: darken(rgb(155, 162, 156), 5%);
   color: lighten($bg, 10%);
   font-size:2em;
   margin:.2em 0 1em;  
-  padding: .25em;
+//   padding: .25em;
+// padding: 12px 20px;
   width:100%;
   resize: vertical;
   border-color: $secondary-color;

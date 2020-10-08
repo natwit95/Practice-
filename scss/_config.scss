@@ -66,6 +66,7 @@ $background-opacity: 0.8;
 @mixin mediaSm {
     @media screen and (max-width: 500px) {
         @content;
+       
     }
 }
 
@@ -74,17 +75,20 @@ $background-opacity: 0.8;
 @mixin mediaMd {
     @media screen and (max-width: 768px) {
         @content;
+        
     }
 }
 
 @mixin mediaLg {
     @media screen and (min-width: 769px) and (max-width: 768px) {
         @content;
+        
     }
 }
 
 @mixin mediaXl {
     @media screen and (min-width: 1171px)  {
         @content;
+         
     }
 }

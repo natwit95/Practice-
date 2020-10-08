@@ -246,19 +246,16 @@ form {
   font-size: 1.2em;
   margin: 2em auto;
   padding: 2em;
-  width: 50%;
   background: linear-gradient(to bottom, #3e5151, #decba4);
   font-family: Century;
-  box-shadow: 15px 15px 1px #eece1a, 15px 15px 1px 2px black;
   border-color: black; }
 
 /* Text Input */
 input[type='text'], [type='email'], textarea {
-  background-color: #737373;
+  background-color: #8e968f;
   color: #afa294;
   font-size: 2em;
   margin: .2em 0 1em;
-  padding: .25em;
   width: 100%;
   resize: vertical;
   border-color: #eece1a; }
