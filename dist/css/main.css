@@ -74,7 +74,7 @@
     position: relative;
     font-size: 30px;
     text-transform: uppercase;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     font-weight: 300;
     color: #fff;
     text-decoration: none;
@@ -338,7 +338,7 @@ input[type='submit']:hover {
   .menu.nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
-    font-size: 24px; }
+    font-size: 25px; }
   .menu-branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
