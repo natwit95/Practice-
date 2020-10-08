@@ -35,14 +35,13 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    justify-content: center;
     float: left;
     width: 50%;
     height: 100vh;
     overflow: hidden; }
   .menu-nav {
     margin: 0;
-    padding: 0;
+    padding: 3rem;
     background: #373737;
     list-style: none;
     transform: translate3d(0, -100%, 0);
@@ -61,7 +60,8 @@
       background: url("../img/portrait2.jpg");
       background-size: cover;
       border-radius: 50%;
-      border: solid 3px #eece1a; }
+      border: solid 3px #eece1a;
+      margin-top: 1rem; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -74,7 +74,7 @@
     position: relative;
     font-size: 30px;
     text-transform: uppercase;
-    padding: 0.5rem 0;
+    padding: 0.9rem 0;
     font-weight: 300;
     color: #fff;
     text-decoration: none;
