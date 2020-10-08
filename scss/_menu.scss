@@ -12,7 +12,7 @@
 		width: 28px;
 		height: 3px;
 		margin: 0 0 5px 0;
-		background: #eece1a;
+		background: white;
 		@include easeOut;
 	}
 
@@ -53,16 +53,16 @@
 		display: flex;
 		flex-flow: column wrap;
 		align-items: center;
-		// justify-content: center;
+		justify-content: center;
 		float: left;
 		width: 50%;
 		height: 100vh;
-		overflow: hidden;
+		overflow: scroll;
 
 	}
 	&-nav {
 		margin: 0;
-		padding: 3rem;
+		padding: 0;
 		background: darken($primary-color, 5);
 		list-style: none;
 		transform: translate3d(0, -100%, 0);
@@ -91,7 +91,7 @@
 			background-size: cover;
 			border-radius: 50%;
 			border: solid 3px $secondary-color;
-			margin-top: 1rem;
+			// margin-top: 1.1rem;
 			
 			
 		}
@@ -103,6 +103,7 @@
 		&.show {
 			//SLide in from right
 			transform: translate3d(0, 0, 0);
+			
 		}
 		&.current > a {
 			color: $secondary-color;
@@ -114,10 +115,12 @@
 		position: relative;
 		font-size: 30px;
 		text-transform: uppercase;
-		padding: 0.9rem 0;
+		padding: .8rem 0;
 		font-weight: 300;
 		color: set-text-color($primary-color);
 		text-decoration: none;
+		
+		
 		@include easeOut;
 
 		&:hover {

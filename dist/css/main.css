@@ -12,7 +12,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #eece1a;
+    background: white;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -35,13 +35,14 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    justify-content: center;
     float: left;
     width: 50%;
     height: 100vh;
-    overflow: hidden; }
+    overflow: scroll; }
   .menu-nav {
     margin: 0;
-    padding: 3rem;
+    padding: 0;
     background: #373737;
     list-style: none;
     transform: translate3d(0, -100%, 0);
@@ -60,8 +61,7 @@
       background: url("../img/portrait2.jpg");
       background-size: cover;
       border-radius: 50%;
-      border: solid 3px #eece1a;
-      margin-top: 1rem; }
+      border: solid 3px #eece1a; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -74,7 +74,7 @@
     position: relative;
     font-size: 30px;
     text-transform: uppercase;
-    padding: 0.9rem 0;
+    padding: .8rem 0;
     font-weight: 300;
     color: #fff;
     text-decoration: none;
@@ -126,7 +126,7 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 5rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
@@ -344,6 +344,8 @@ input[type='submit']:hover {
       width: 150px;
       height: 150px;
       background-size: cover; }
+  .nav-link {
+    top: -15vh; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
