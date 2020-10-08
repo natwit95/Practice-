@@ -12,7 +12,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: #eece1a;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -147,7 +147,7 @@ header {
   color: #eece1a; }
 
 main {
-  padding: 4rem;
+  padding: 4.2rem;
   min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
