@@ -36,7 +36,7 @@ function toggleMenu() {
     }
 }
 
-// var infoBtn = document.getElementsByClassName("collapsible");
+//Information for projects page, show more info -> show/hide
 
 let i;
 
@@ -51,3 +51,6 @@ for (i = 0; i < infoBtn.length; i++) {
 		}
 	});
 }
+
+//EMAILJS FORM
+

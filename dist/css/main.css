@@ -248,9 +248,7 @@ form {
   padding: 2em;
   background: linear-gradient(to bottom, #3e5151, #decba4);
   font-family: Century;
-  border: none;
-  /* transform: translateZ(100px); */
-   }
+  border-color: black; }
 
 /* Text Input */
 input[type='text'], [type='email'], textarea {
