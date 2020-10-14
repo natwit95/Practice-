@@ -126,7 +126,7 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 5rem; }
+    font-size: 6rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
@@ -248,7 +248,9 @@ form {
   padding: 2em;
   background: linear-gradient(to bottom, #3e5151, #decba4);
   font-family: Century;
-  border-color: black; }
+  border: none;
+  /* transform: translateZ(100px); */
+   }
 
 /* Text Input */
 input[type='text'], [type='email'], textarea {
