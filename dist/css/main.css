@@ -217,6 +217,11 @@ main {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
+  .projects .item {
+    background: linear-gradient(to bottom, #3e5151, #decba4);
+    padding: 1rem;
+    border-style: outset;
+    border-color: #afb392; }
   .projects img {
     width: 100%;
     border: 3px #fff solid;

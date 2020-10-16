@@ -164,9 +164,13 @@ transition: .3all;
     // align-content: center;
     // justify-items: center;
     
-    // .item {
-    //     border: solid;
-    // }
+    .item {
+        background: $test-image;
+        padding: 1rem;
+        border-style: outset ;
+        border-color:#afb392;
+        
+    }
     
     img {
         width: 100%;
