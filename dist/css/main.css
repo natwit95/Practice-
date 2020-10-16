@@ -203,7 +203,7 @@ main {
     color: #eece1a;
     background-color: #515430; }
   .about-info .job {
-    background: #515444;
+    background: linear-gradient(to bottom, #3e5151, #decba4);
     padding: .8rem;
     border-bottom: #eece1a 25px solid; }
   .about-info .descriptions {
