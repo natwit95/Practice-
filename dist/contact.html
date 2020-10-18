@@ -1,121 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+			integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/main.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+		<title>Contact Me</title>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"
+		></script>
+		<script type="text/javascript">
+			(function () {
+				emailjs.init("user_3jhJ0BpolKBa7lHro0NRv");
+			})();
+		</script>
+		<script type="text/javascript">
+			window.onload = function () {
+				document
+					.getElementById("contact-send")
+					.addEventListener("submit", function (event) {
+						event.preventDefault();
+						// generate the contact number value
+						this.contact_number.value = (Math.random() * 100000) | 0;
+						emailjs.sendForm("natwit95", "contact_form", this);
+					});
+			};
+		</script>
+	</head>
 
-    <title>Contact Me</title>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
-        <script type="text/javascript">
-            (function () {
-                emailjs.init('user_3jhJ0BpolKBa7lHro0NRv');
-            })();
-        </script>
-        <script type="text/javascript">
-            window.onload = function () {
-                document.getElementById('contact-send').addEventListener('submit', function (event) {
-                    event.preventDefault();
-                    // generate the contact number value
-                    this.contact_number.value = Math.random() * 100000 | 0;
-                    emailjs.sendForm('natwit95', 'contact_form', this);
-                });
-            }
-        </script>
-</head>
+	<body>
+		<header>
+			<div class="menu-btn">
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+			</div>
 
-<body>
+			<nav class="menu">
+				<div class="menu-branding">
+					<div class="portrait"></div>
+				</div>
+				<ul class="menu-nav">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link"> Home </a>
+					</li>
+					<li class="nav-item">
+						<a href="about.html" class="nav-link"> About me </a>
+					</li>
+					<li class="nav-item">
+						<a href="work.html" class="nav-link"> My Work </a>
+					</li>
+					<li class="nav-item">
+						<a href="blog.html" class="nav-link"> BLOGS </a>
+					</li>
+					<li class="nav-item current">
+						<a href="contact.html" class="nav-link"> How to Reach Me </a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main id="contact">
+			<h1 class="lg-heading">
+				Contact
+				<span class="text-secondary">Me</span>
+			</h1>
+			<h2 class="sm-heading">Ways to reach me...</h2>
+			<div class="contact-form">
+				<form id="contact-send">
+					<input type="hidden" name="contact_number" />
+					<div class="txtb">
+						<label>Name</label>
+						<input type="text" name="user_name" />
+					</div>
+					<div class="txtb">
+						<label>Email</label>
+						<input type="email" name="user_email" />
+					</div>
+					<div class="txtb">
+						<label>Message</label>
+						<textarea name="message"></textarea>
+					</div>
 
-    <header>
-        <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-        </div>
-
-        <nav class="menu">
-            <div class="menu-branding">
-                <div class="portrait"></div>
-            </div>
-            <ul class="menu-nav">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">
-                        Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">
-                        About me
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="work.html" class="nav-link">
-                        My Work
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="blog.html" class="nav-link">
-                        BLOGS
-                    </a>
-                </li>
-                <li class="nav-item current">
-                    <a href="contact.html" class="nav-link">
-                        How to Reach Me
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main id="contact">
-        <h1 class="lg-heading">
-            Contact
-            <span class="text-secondary">Me</span>
-        </h1>
-        <h2 class="sm-heading">
-            Ways to reach me...
-        </h2>
-        <div class="contact-form">
-        <form id="contact-send">
-            <input type="hidden" name="contact_number">
-            <div class="txtb">
-                <label>Name</label>
-                <input type="text" name="user_name">
-            </div>
-            <div class="txtb">
-                <label>Email</label>
-                <input type="email" name="user_email">
-            </div> 
-            <div class="txtb">
-                <label>Message</label>
-                <textarea name="message"></textarea>   
-            </div>
-            
-            <input type="submit" value="Send">
-        </form>
-
-        </div>
-
-
-    </main>
-    <footer id="main-footer">
-        <div class="icons">
-        
-            <a href="https://medium.com/@natwit95">
-                <i class="fab fa-medium fa-2x"></i>
-            </a>
-            <a href="https://wwww.linkedin.com/in/natalia-agata-wit/">
-                <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a href="https://github.com/natwit95">
-                <i class="fab fa-github fa-2x"></i>
-            </a>
-        </div>
-    </footer>
-    <script src="js/main.js"></script>
-</body>
-
-
+					<input type="submit" value="Send" />
+				</form>
+			</div>
+		</main>
+		<footer id="main-footer">
+			<div class="icons">
+				<a href="https://medium.com/@natwit95">
+					<i class="fab fa-medium fa-2x"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/natalia-agata-wit/">
+					<i class="fab fa-linkedin fa-2x"></i>
+				</a>
+				<a href="https://github.com/natwit95">
+					<i class="fab fa-github fa-2x"></i>
+				</a>
+			</div>
+		</footer>
+		<script src="js/main.js"></script>
+	</body>
 </html>
