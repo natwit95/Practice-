@@ -16,23 +16,7 @@
 			type="text/javascript"
 			src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"
 		></script>
-		<script type="text/javascript">
-			(function () {
-				emailjs.init("user_3jhJ0BpolKBa7lHro0NRv");
-			})();
-		</script>
-		<script type="text/javascript">
-			window.onload = function () {
-				document
-					.getElementById("contact-send")
-					.addEventListener("submit", function (event) {
-						event.preventDefault();
-						// generate the contact number value
-						this.contact_number.value = (Math.random() * 100000) | 0;
-						emailjs.sendForm("natwit95", "contact_form", this);
-					});
-			};
-		</script>
+	
 	</head>
 
 	<body>
@@ -106,5 +90,7 @@
 			</div>
 		</footer>
 		<script src="js/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
 	</body>
 </html>
