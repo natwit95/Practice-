@@ -8,6 +8,7 @@ const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
 const navItems = document.querySelectorAll(".nav-item");
 const infoBtn = document.querySelectorAll(".show-more");
+const contactInputs = document.querySelectorAll('.txtb')
 
 //Setting Initial State of Menu
 
@@ -68,14 +69,23 @@ window.onload = function () {
 			emailjs.sendForm("natwit95", "contact_form", this)
 			.then(
 				function (response) {
-					console.log("SUCCESS!", response.status, response.text);
-					Swal.fire({
-                        position: "middle",
-						icon: "success",
-						title: "Your message has been sent! ",
-						showConfirmButton: true,
-						// timer: 1500,
-					});
+                    console.log("SUCCESS!", response.status, response.text);
+                    console.log(contactInputs)
+                    contactInputs.forEach(input => {
+                        if (input = "") {
+                            alert("pleaseeee ")
+                        }
+                        else {
+                            Swal.fire({
+															position: "center",
+															icon: "success",
+															title: "Your message has been sent! ",
+															showConfirmButton: true,
+															// timer: 1500,
+														});
+                        }
+                    })
+					
 				},
 				function (error) {
 					console.log("FAILED...", error);
