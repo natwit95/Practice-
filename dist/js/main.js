@@ -64,9 +64,10 @@ window.onload = function () {
 		.getElementById("contact-send")
 		.addEventListener("submit", function (event) {
 			event.preventDefault();
-			// generate the contact number value
+            // generate the contact number value
+            console.log(contactInputs)
 			contactInputs.forEach((input) => {
-				if ((input.value = "")) {
+				if (input.value == "") {
                     alert("pleaseeee ");
                     console.log(input.value)
                 }
@@ -76,7 +77,7 @@ window.onload = function () {
                 }
 			})
 			
-			.then(
+			then(
 				function (response) {
 					console.log("SUCCESS!", response.status, response.text);
 					console.log(contactInputs);
