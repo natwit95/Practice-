@@ -65,19 +65,19 @@ window.onload = function () {
 		.addEventListener("submit", function (event) {
 			event.preventDefault();
             // generate the contact number value
-            console.log(contactInputs)
-			contactInputs.forEach((input) => {
-				if (input.value == "") {
-                    alert("pleaseeee ");
-                    console.log(input.value)
-                }
-                else {
+            // console.log(contactInputs)
+			// contactInputs.forEach((input) => {
+			// 	if (input.value == "") {
+            //         alert("pleaseeee ");
+            //         console.log(input.value)
+            //     }
+            //     else {
                  this.contact_number.value = (Math.random() * 100000) | 0;
-			emailjs.sendForm("natwit95", "contact_form", this);   
-                }
+			emailjs.sendForm("natwit95", "contact_form", this) 
+                // }
 			})
 			
-			then(
+			.then(
 				function (response) {
 					console.log("SUCCESS!", response.status, response.text);
 					console.log(contactInputs);
@@ -101,5 +101,5 @@ window.onload = function () {
 					});
 				}
 			);
-		});
+		// });
 };
