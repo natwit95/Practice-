@@ -9,6 +9,7 @@ const menuBranding = document.querySelector(".menu-branding");
 const navItems = document.querySelectorAll(".nav-item");
 const infoBtn = document.querySelectorAll(".show-more");
 const contactInputs = document.querySelectorAll(".valid");
+const blogs = document.querySelector(".blogs")
 
 //Setting Initial State of Menu
 
@@ -55,57 +56,59 @@ for (i = 0; i < infoBtn.length; i++) {
 
 //EMAILJS FORM
 
-(function () {
-	emailjs.init("user_3jhJ0BpolKBa7lHro0NRv");
-})();
+// (function () {
+// 	emailjs.init("user_3jhJ0BpolKBa7lHro0NRv");
+// })();
 
-window.onload = function () {
-	document
-		.getElementById("contact-send")
-		.addEventListener("submit", function (event) {
-			event.preventDefault();
-            // generate the contact number value
-            // console.log(contactInputs)
-			// contactInputs.forEach((input) => {
-			// 	if (input.value == "") {
-            //         alert("pleaseeee ");
-            //         console.log(input.value)
-            //     }
-            //     else {
-                 this.contact_number.value = (Math.random() * 100000) | 0;
-			emailjs.sendForm("natwit95", "contact_form", this) 
-                // }
-			})
+// window.onload = function () {
+// 	document
+// 		.getElementById("contact-send")
+// 		.addEventListener("submit", function (event) {
+// 			event.preventDefault();
+//             // generate the contact number value
+//             // console.log(contactInputs)
+// 			// contactInputs.forEach((input) => {
+// 			// 	if (input.value == "") {
+//             //         alert("pleaseeee ");
+//             //         console.log(input.value)
+//             //     }
+//             //     else {
+//                  this.contact_number.value = (Math.random() * 100000) | 0;
+// 			emailjs.sendForm("natwit95", "contact_form", this) 
+//                 // }
+// 			})
 			
-			.then(
-				function (response) {
-					console.log("SUCCESS!", response.status, response.text);
-					console.log(contactInputs);
+// 			.then(
+// 				function (response) {
+// 					console.log("SUCCESS!", response.status, response.text);
+// 					console.log(contactInputs);
 
-					Swal.fire({
-						position: "center",
-						icon: "success",
-						title: "Your message has been sent! ",
-						showConfirmButton: true,
-						// timer: 1500,
-					});
-				},
-				function (error) {
-					console.log("FAILED...", error);
-					Swal.fire({
-						position: "center",
-						icon: "error",
-						title:
-							"There was an error trying to send your message. Please try again later",
-						showConfirmButton: true,
-					});
-				}
-			);
-        // });
+// 					Swal.fire({
+// 						position: "center",
+// 						icon: "success",
+// 						title: "Your message has been sent! ",
+// 						showConfirmButton: true,
+// 						// timer: 1500,
+// 					});
+// 				},
+// 				function (error) {
+// 					console.log("FAILED...", error);
+// 					Swal.fire({
+// 						position: "center",
+// 						icon: "error",
+// 						title:
+// 							"There was an error trying to send your message. Please try again later",
+// 						showConfirmButton: true,
+// 					});
+// 				}
+// 			);
+//         // });
     
-};
+// };
 
 //Blog posts
+
+document.body.onload = fetchBlogs;
  function fetchBlogs() {
     fetch(
         "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40natwit95"
@@ -115,5 +118,16 @@ window.onload = function () {
  }
 
 function displayBlog(data) {
-     data.items.map(blog => console.log(blog))
+    console.log(data.items)
+    
+	data.items.forEach(blog => {
+		// console.log(blog)
+		let eachBlog = document.createElement("div");
+		eachBlog.className = "blog-card"
+		eachBlog.innerHTML = `
+			<img src="${blog.thumbnail}" class="blog__topImg"></img>
+			<h1>${blog.title}</h1>
+			<h6>${blog.pubDate} - ${blog.author}</h6>`;
+		blogs.append(eachBlog)
+	})
  }
