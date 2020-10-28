@@ -159,16 +159,12 @@ main {
     grid-template-columns: repeat(3, 1fr);
     
     .item {
-        background: $test-image;
-        padding: 1rem;
-        border-style: outset ;
-        border-color:#afb392;
+       @include eachCard
     }
     
     img {
-        width: 100%;
-        border: 3px #fff solid;
-        height: 200px;
+        @include card-img;
+
         &:hover {
             opacity: 0.5;
             border-color: $secondary-color;
@@ -261,9 +257,40 @@ input[type='submit']:hover {background-color:darken(gray,5%);}
     }
 }
 
-.VueCarousel-wrapper {
-    background:rgba(lighten($primary-color, 2), 0.2) ;
+//Blogs
+
+.blogs {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(3, 1fr);
+    
 }
+.blog-card {
+    @include eachCard;
+  
+}
+
+.blog__topImg {
+    @include card-img;
+ 
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.blog-date {
+  position: absolute;
+  top: -25px;
+  right: 0px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.571)
+}
+
+// .VueCarousel-wrapper {
+//     background:rgba(lighten($primary-color, 2), 0.2) ;
+// }
 
 .btn-dark {
     @extend .btn;
@@ -275,6 +302,15 @@ input[type='submit']:hover {background-color:darken(gray,5%);}
     @extend .btn;
     background: lighten($primary-color,50);
     color: #333;
+}
+
+.blog-button {
+    float: right;
+    &:hover {
+        color: $secondary-color;
+        background-color: rgba(255, 255, 255, 0.571);
+    }
+    
 }
 
 #main-footer {

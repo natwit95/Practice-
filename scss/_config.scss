@@ -52,6 +52,22 @@ $background-opacity: 0.8;
     }
 }
 
+//Blogs 
+
+
+@mixin eachCard {
+     background: $test-image;
+     padding: 1rem;
+     border-style: outset ;
+     border-color:#afb392;
+}
+
+@mixin card-img {
+        width: 100%;
+        // border: 3px #fff solid;
+        height: 200px;
+}
+
 //Set Text Color
 
 @function set-text-color($color) {

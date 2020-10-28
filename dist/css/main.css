@@ -4,7 +4,7 @@
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 35px;
+  right: 27px;
   top: 35px;
   cursor: pointer;
   transition: all 0.5s ease-out; }
@@ -226,7 +226,6 @@ main {
     border-color: #afb392; }
   .projects img {
     width: 100%;
-    border: 3px #fff solid;
     height: 200px; }
     .projects img:hover {
       opacity: 0.5;
@@ -303,8 +302,32 @@ input[type='submit']:hover {
     background: #eece1a;
     color: set-text-color #eece1a; }
 
-.VueCarousel-wrapper {
-  background: rgba(73, 73, 73, 0.2); }
+.blogs {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+
+.blog-card {
+  background: linear-gradient(to bottom, #3e5151, #decba4);
+  padding: 1rem;
+  border-style: outset;
+  border-color: #afb392; }
+
+.blog__topImg {
+  width: 100%;
+  height: 200px; }
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white; }
+
+.blog-date {
+  position: absolute;
+  top: -25px;
+  right: 0px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.571); }
 
 .btn-dark {
   background: black;
@@ -314,6 +337,12 @@ input[type='submit']:hover {
   background: #c4c4c4;
   color: #333; }
 
+.blog-button {
+  float: right; }
+  .blog-button:hover {
+    color: #eece1a;
+    background-color: rgba(255, 255, 255, 0.571); }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -322,7 +351,7 @@ input[type='submit']:hover {
   height: 60px; }
 
 @media screen and (min-width: 769px) and (max-width: 768px) {
-  .projects {
+  .projects, .blogs {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
@@ -358,12 +387,12 @@ input[type='submit']:hover {
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
-  .projects {
+  .projects, .blogs {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
-  .projects {
+  .projects, .blogs {
     grid-template-columns: 1fr;
     padding: 0.5rem; } }
