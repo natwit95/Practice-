@@ -130,7 +130,7 @@ function displayBlog(data) {
 				<img src="${blog.thumbnail}" class="blog__topImg"></img>
 				<h6 class="blog-date">${formatDate(blog.pubDate)}</h6>
 			</div>
-				<h2>${blog.title}</h2>
+				<h3>${blog.title}</h3>
 				<a href=${blog.link} class="blog-button">Read Article ‣</a>`;
 		blogs.append(eachBlog);
 	});

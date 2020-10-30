@@ -202,12 +202,13 @@ form {
 input[type='text'],[type='email'], textarea {
   @extend .roundedborder;
   background-color: darken(rgb(155, 162, 156), 5%);
-  color: lighten($bg, 10%);
-  font-size:2em;
+//   color: lighten($bg, 10%);
+  font-size:1.5em;
   margin:.2em 0 1em;  
   width:100%;
   resize: vertical;
-  border-color: $secondary-color;
+  border-color: #c5c3b4;
+  padding: .3em;
 }
 
 
@@ -266,6 +267,7 @@ input[type='submit']:hover {background-color:darken(gray,5%);}
     
 }
 .blog-card {
+    position: relative;
     @include eachCard;
   
 }
@@ -306,6 +308,10 @@ input[type='submit']:hover {background-color:darken(gray,5%);}
 
 .blog-button {
     float: right;
+    position: absolute;
+    bottom: 3px;
+    right: 5px;
+    
     &:hover {
         color: $secondary-color;
         background-color: rgba(255, 255, 255, 0.571);

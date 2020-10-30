@@ -260,12 +260,12 @@ form {
 /* Text Input */
 input[type='text'], [type='email'], textarea {
   background-color: #8e968f;
-  color: #afa294;
-  font-size: 2em;
+  font-size: 1.5em;
   margin: .2em 0 1em;
   width: 100%;
   resize: vertical;
-  border-color: #eece1a; }
+  border-color: #c5c3b4;
+  padding: .3em; }
 
 /* Submit Button */
 input[type='submit'] {
@@ -308,6 +308,7 @@ input[type='submit']:hover {
   grid-template-columns: repeat(3, 1fr); }
 
 .blog-card {
+  position: relative;
   background: linear-gradient(to bottom, #3e5151, #decba4);
   padding: 1rem;
   border-style: outset;
@@ -338,7 +339,10 @@ input[type='submit']:hover {
   color: #333; }
 
 .blog-button {
-  float: right; }
+  float: right;
+  position: absolute;
+  bottom: 3px;
+  right: 5px; }
   .blog-button:hover {
     color: #eece1a;
     background-color: rgba(255, 255, 255, 0.571); }
