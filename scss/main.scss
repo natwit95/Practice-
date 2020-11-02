@@ -204,13 +204,20 @@ input[type='text'],[type='email'], textarea {
   background-color: darken(rgb(155, 162, 156), 5%);
 //   color: lighten($bg, 10%);
   font-size:1.5em;
-  margin:.2em 0 1em;  
+//   margin:.2em 0 1em;  
   width:100%;
   resize: vertical;
   border-color: #c5c3b4;
   padding: .3em;
-}
+  
+  
 
+}
+.name-alert {
+      margin-top: 0;
+      color: red;
+      font-size: .8em;
+  }
 
 /* Submit Button */
 input[type='submit'] {
@@ -315,7 +322,7 @@ input[type='submit']:hover {background-color:darken(gray,5%);}
     position: absolute;
     bottom: 0px;
     right: 0px;
-    padding: 1px;
+    padding: 1pxnn;
     margin-top: 3em;
     background-color: rgba(255, 255, 255, 0.571);
     // &:hover {
