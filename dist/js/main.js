@@ -107,18 +107,18 @@ window.onload = function () {
 			event.preventDefault();
 			// generate the contact number value
 			let nameAlert;
-			if (formName.value == "") {
+			if (formName.value == "" ) {
 				nameAlert = "*This Field is Required"
 				document.querySelector(".name-alert").innerHTML = nameAlert
 				document.myForm.Name.focus();
 				return false;
 			}
 			else {
-				console.log("sent")
+				  this.contact_number.value = (Math.random() * 100000) | 0;
+					emailjs.sendForm("natwit95", "contact_form", this);
 			}
            
-                //  this.contact_number.value = (Math.random() * 100000) | 0;
-				// 	emailjs.sendForm("natwit95", "contact_form", this);
+               
                 
 			})
 
