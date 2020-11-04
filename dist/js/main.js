@@ -9,6 +9,8 @@ const menuBranding = document.querySelector(".menu-branding");
 const navItems = document.querySelectorAll(".nav-item");
 const infoBtn = document.querySelectorAll(".show-more");
 const formName = document.querySelector(".form-name");
+const formEmail = document.querySelector(".form-email");
+
 const blogs = document.querySelector(".blogs");
 
 //Setting Initial State of Menu
@@ -106,17 +108,22 @@ window.onload = function () {
 		.addEventListener("submit", function (event) {
 			event.preventDefault();
 			// generate the contact number value
-			let nameAlert;
-			if (formName.value == "" ) {
+			let nameAlert, emailAlert;
+			if (formName.value.length < 2 ) {
 				nameAlert = "*This Field is Required"
 				document.querySelector(".name-alert").innerHTML = nameAlert
 				document.myForm.Name.focus();
 				return false;
 			}
-			else {
-				  this.contact_number.value = (Math.random() * 100000) | 0;
+				if (formEmail.value == "") {
+					emailAlert = "*Please provide a valid email";
+					document.querySelector(".email-alert").innerHTML = emailAlert;
+					document.myForm.Name.focus();
+					return false;
+				} else {
+					this.contact_number.value = (Math.random() * 100000) | 0;
 					emailjs.sendForm("natwit95", "contact_form", this);
-			}
+				}
            
                
                 
