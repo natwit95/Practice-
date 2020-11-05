@@ -10,8 +10,9 @@ const navItems = document.querySelectorAll(".nav-item");
 const infoBtn = document.querySelectorAll(".show-more");
 const formName = document.querySelector(".form-name");
 const formEmail = document.querySelector(".form-email");
+const formMessage = document.querySelector(".form-message")
 
-const blogs = document.querySelector(".blogs");
+
 
 //Setting Initial State of Menu
 
@@ -58,77 +59,82 @@ for (i = 0; i < infoBtn.length; i++) {
 
 
 
-//Blog posts
 
-document.body.onload = fetchBlogs;
-function fetchBlogs() {
-	fetch(
-		"https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40natwit95"
-	)
-		.then((resp) => resp.json())
-		.then((data) => {
-			displayBlog(data);
-		});
-}
-
-function displayBlog(data) {
-	console.log(data.items);
-
-	data.items.forEach((blog) => {
-		// console.log(blog)
-		let eachBlog = document.createElement("div");
-		eachBlog.className = "blog-card";
-		eachBlog.innerHTML = `<div class="container">
-				<img src="${blog.thumbnail}" class="blog__topImg"></img>
-				<h6 class="blog-date">${formatDate(blog.pubDate)}</h6>
-			</div>
-				<h3 class="blog-title">${blog.title}</h3>
-				<a href=${blog.link} class="blog-button">Read Article ‣</a>`;
-		blogs.append(eachBlog);
-	});
-
-	function formatDate(dateString) {
-		let formattedDate = dateString.split(" ")[0];
-		let numbers = formattedDate.split("-");
-		let year = numbers.shift(); // remove first element and return it
-		numbers.push(year);
-		return numbers.join("-");
-	}
-}
 
 //EMAILJS FORM
 
-(function () {
-	emailjs.init("user_3jhJ0BpolKBa7lHro0NRv");
-})();
+
 
 window.onload = function () {
 	document
 		.getElementById("contact-send")
 		.addEventListener("submit", function (event) {
 			event.preventDefault();
-			// generate the contact number value
-			let nameAlert, emailAlert;
-			if (formName.value.length < 2 ) {
-				nameAlert = "*This Field is Required"
-				document.querySelector(".name-alert").innerHTML = nameAlert
-				document.myForm.Name.focus();
-				return false;
-			}
-				if (formEmail.value == "") {
-					emailAlert = "*Please provide a valid email";
-					document.querySelector(".email-alert").innerHTML = emailAlert;
-					document.myForm.Name.focus();
+		
+			
+				const usernameValue = formName.value.trim();
+				const emailValue = formEmail.value.trim();
+				const messageValue = formMessage.value.trim();
+				if (usernameValue === "") {
+					setErrorFor(formName, "Username cannot be blank");
+					// return false
+				} else {
+					setSuccessFor(formName);
+				}
+				if (emailValue === "") {
+					setErrorFor(formEmail, "Email cannot be blank");
 					return false;
 				} else {
-					this.contact_number.value = (Math.random() * 100000) | 0;
-					emailjs.sendForm("natwit95", "contact_form", this);
+					setSuccessFor(formEmail);
 				}
-           
-               
-                
-			})
+				if (messageValue === "") {
+					setErrorFor(formMessage, "Message cannot be blank");
+					return false;
+				} else {
+					setSuccessFor(formMessage);
+				}
+				(function () {
+					emailjs.init("user_3jhJ0BpolKBa7lHro0NRv");
+				})();
 
+				this.contact_number.value = (Math.random() * 100000) | 0;
+				emailjs.sendForm("natwit95", "contact_form", this);
+			
+		
+		})
+	
+	};
+	
+
+
+
+	function setErrorFor(input, message) {
+		const formControl = input.parentElement;
+		const small = formControl.querySelector("small");
+		formControl.className = "form-control error";
+		small.innerText = message;
+	}
+
+	function setSuccessFor(input) {
+		const formControl = input.parentElement;
+		formControl.className = "form-control success";
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 			// .then(
 			// 	function (response) {
 			// 		console.log("SUCCESS!", response.status, response.text);
@@ -155,4 +161,4 @@ window.onload = function () {
 			// );
         // });
 
-};
+
