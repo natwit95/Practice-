@@ -77,7 +77,8 @@ window.onload = function () {
 				const messageValue = formMessage.value.trim();
 				if (usernameValue === "") {
 					setErrorFor(formName, "Username cannot be blank");
-					// return false
+					return false
+					
 				} else {
 					setSuccessFor(formName);
 				}
@@ -97,10 +98,18 @@ window.onload = function () {
 					emailjs.init("user_3jhJ0BpolKBa7lHro0NRv");
 				})();
 
-				this.contact_number.value = (Math.random() * 100000) | 0;
-				emailjs.sendForm("natwit95", "contact_form", this);
-			
-		
+			// 	this.contact_number.value = (Math.random() * 100000) | 0;
+			// emailjs.sendForm("natwit95", "contact_form", this);
+				Swal.fire({
+						position: "center",
+						icon: "success",
+						title: "Your message has been sent! ",
+						showConfirmButton: true,
+						// timer: 1500,
+						
+				});
+
+
 		})
 	
 	};
