@@ -97,9 +97,10 @@ window.onload = function () {
 				(function () {
 					emailjs.init("user_3jhJ0BpolKBa7lHro0NRv");
 				})();
-
-			// 	this.contact_number.value = (Math.random() * 100000) | 0;
-			// emailjs.sendForm("natwit95", "contact_form", this);
+			
+				this.contact_number.value = (Math.random() * 100000) | 0;
+				emailjs.sendForm("natwit95", "contact_form", this);
+			
 				Swal.fire({
 						position: "center",
 						icon: "success",
