@@ -247,7 +247,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50px 30px; }
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 .contact-form {
   border-radius: 5px;
