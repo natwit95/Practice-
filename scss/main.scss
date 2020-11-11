@@ -156,7 +156,9 @@ main {
 .projects {
     display: grid;
     grid-gap: 0.7rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
+   
+    
     
     .item {
        @include eachCard
@@ -185,8 +187,8 @@ main {
     display: flex;
 	align-items: center;
 	justify-content: center;
-	// min-height: 100vh;
-	margin-top: 50px;
+    margin: 50px 30px;
+   
 }
 .contact-form {
     border-radius: 5px;
@@ -274,10 +276,8 @@ form {
 
 /* Submit Button */
 input[type='submit'] {
-    // 	background-color: #8e44ad;
-	// border: 2px solid #8e44ad;
+   
 	border-radius: 4px;
-	// color: #fff;
 	display: block;
 	font-family: inherit;
 	font-size: 16px;
@@ -286,46 +286,8 @@ input[type='submit'] {
 	width: 100%;
 }
 
-// form {
-//  font-size:1.2em; 
-//   margin: 2em auto; 
-//   @extend .roundedborder; 
-//   padding:2em;
-//   background: $test-image ;
-//   font-family: Century;
-//   border-style: outset ;
-//   border-color:#afb392;
-// }
-
-/* Text Input */
-//  textarea {
-//   @extend .roundedborder;
-//   background-color: darken(rgb(155, 162, 156), 5%);
-// //   color: lighten($bg, 10%);
-//   font-size:1.5em;
-// //   margin:.2em 0 1em;  
-//   width:100%;
-//   resize: vertical;
-//   border-color: #c5c3b4;
-//   padding: .3em;
-  
-  
-
-// }
-
-
-
-
-
-
-
    
 input[type='submit']:hover {background-color:darken(gray,5%);}
-
-
-
-
-
 
 
 //Button Styles 
@@ -380,9 +342,7 @@ input[type='submit']:hover {background-color:darken(gray,5%);}
   background-color: rgba(255, 255, 255, 0.571)
 }
 
-// .VueCarousel-wrapper {
-//     background:rgba(lighten($primary-color, 2), 0.2) ;
-// }
+
 
 .btn-dark {
     @extend .btn;
@@ -404,10 +364,7 @@ input[type='submit']:hover {background-color:darken(gray,5%);}
     padding: 1pxnn;
     margin-top: 3em;
     background-color: rgba(255, 255, 255, 0.571);
-    // &:hover {
-    //     color: $secondary-color;
-    //     background-color: rgba(255, 255, 255, 0.571);
-    // }
+  
     
 }
 

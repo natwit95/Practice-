@@ -247,7 +247,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px; }
+  margin: 50px 30px; }
 
 .contact-form {
   border-radius: 5px;
@@ -330,7 +330,6 @@ input[type='submit'] {
   margin-top: 20px;
   width: 100%; }
 
-/* Text Input */
 input[type='submit']:hover {
   background-color: #737373; }
 
@@ -397,6 +396,10 @@ input[type='submit']:hover {
   background: #2b2b2b;
   color: #fff;
   height: 60px; }
+
+@media screen and (min-width: 1171px) {
+  main {
+    padding: 1rem 6.6rem; } }
 
 @media screen and (min-width: 769px) and (max-width: 768px) {
   .projects, .blogs {

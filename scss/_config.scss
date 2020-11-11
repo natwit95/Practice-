@@ -56,7 +56,8 @@ $background-opacity: 0.8;
 
 
 @mixin eachCard {
-     background: $test-image;
+     background: $test-image ;
+  
      padding: 1rem;
      border-style: outset ;
      border-color:#afb392;
