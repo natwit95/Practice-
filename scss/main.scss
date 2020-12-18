@@ -86,6 +86,22 @@ main {
     }
 }
 
+.education-info {
+    display: grid;
+    grid-template-areas: 'edu1 edu2';
+    grid-template-columns: repeat(2,  1fr);
+        gap: 70px 30px;
+
+
+    .education-1 {
+        grid-area: edu1;
+    }
+
+    .education-2 {
+        grid-area: edu2;
+    }
+}
+
 .about-info {
     display: grid;
     gap: 70px 30px;
