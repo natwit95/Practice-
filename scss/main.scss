@@ -90,9 +90,11 @@ main {
     display: grid;
     grid-template-areas: 'edu1 edu2';
     grid-template-columns: repeat(2,  1fr);
-        gap: 70px 30px;
+    gap: 70px 30px;
 
-
+.company-logo {
+        @include bio-img
+      }
     .education-1 {
         grid-area: edu1;
     }
@@ -145,16 +147,7 @@ main {
         text-decoration: underline;
     }
     .company-logo {
-       width: 100px;
-       height: 100px;
-       border-radius: 50px;
-       margin-top: -21%;
-       border: solid ;
-              &:hover {
-               transform: translateY(-5px);
-               transition: .3all;
-
-           }
+        @include bio-img
       }
 
     .position {
