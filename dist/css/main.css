@@ -167,9 +167,9 @@ main {
   display: grid;
   grid-template-areas: 'edu1 edu2';
   grid-template-columns: repeat(2, 1fr);
-  gap: 70px 30px;
+  gap: 40px 30px;
   padding: .5em;
-  margin-top: 70px; }
+  margin: 30px; }
   .education-info .company-logo {
     width: 70px;
     height: 70px;
@@ -462,6 +462,9 @@ input[type='submit']:hover {
     top: -15vh; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; }
+  .education-info {
+    grid-template-areas: 'edu1'  'edu2';
     grid-template-columns: 1fr; }
   .projects, .blogs {
     grid-template-columns: repeat(2, 1fr); } }

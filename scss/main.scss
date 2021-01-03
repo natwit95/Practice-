@@ -90,9 +90,9 @@ main {
     display: grid;
     grid-template-areas: 'edu1 edu2';
     grid-template-columns: repeat(2,  1fr);
-    gap: 70px 30px;
+    gap: 40px 30px;
     padding: .5em;
-    margin-top: 70px;
+    margin: 30px;
 
 
     .company-logo {

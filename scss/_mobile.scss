@@ -73,6 +73,13 @@
 
         grid-template-columns: 1fr;
     }
+
+    .education-info {
+    grid-template-areas: 
+        'edu1' 
+        'edu2';
+        grid-template-columns: 1fr;
+    }
      .projects, .blogs {
         grid-template-columns: repeat(2, 1fr);
     }
