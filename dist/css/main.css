@@ -167,10 +167,12 @@ main {
   display: grid;
   grid-template-areas: 'edu1 edu2';
   grid-template-columns: repeat(2, 1fr);
-  gap: 70px 30px; }
+  gap: 70px 30px;
+  padding: .5em;
+  margin-top: 70px; }
   .education-info .company-logo {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 50px;
     margin-top: -21%;
     border: solid; }
@@ -181,6 +183,10 @@ main {
     grid-area: edu1; }
   .education-info .education-2 {
     grid-area: edu2; }
+  .education-info .education {
+    background: linear-gradient(to bottom, #3e5151, #decba4);
+    padding: .8rem;
+    border-bottom: #eece1a 25px solid; }
 
 .about-info {
   display: grid;
@@ -208,8 +214,8 @@ main {
     text-align: center;
     text-decoration: underline; }
   .about-info .company-logo {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 50px;
     margin-top: -21%;
     border: solid; }
@@ -219,8 +225,7 @@ main {
   .about-info .position {
     text-align: center;
     margin: .3em;
-    color: #eece1a;
-    background-color: #515430; }
+    color: #eece1a; }
   .about-info .job {
     background: linear-gradient(to bottom, #3e5151, #decba4);
     padding: .8rem;
