@@ -92,11 +92,24 @@ main {
     grid-template-columns: repeat(2,  1fr);
     gap: 40px 30px;
     padding: .5em;
-    margin: 30px;
-
+    margin-top: 40px;
 
     .company-logo {
         @include bio-img
+    }
+    .school-name  {
+        text-align: center;
+        // position: relative;
+        // bottom: 18px;
+        
+    }
+    .education-year {
+        text-align: center;
+        margin: 0;
+        color: $secondary-color;
+    }
+    .education-desc {
+        padding: 0px 25px;
     }
 
     .education-1 {
@@ -111,6 +124,7 @@ main {
         background: $test-image;
         padding: .8rem;
         border-bottom: $secondary-color 25px solid;
+        position: relative;
     }
 }
 
@@ -387,7 +401,7 @@ input[type='submit']:hover {background-color:darken(gray,5%);}
     position: absolute;
     bottom: 0px;
     right: 0px;
-    padding: 1pxnn;
+    padding: 1px;
     margin-top: 3em;
     background-color: rgba(255, 255, 255, 0.571);
   

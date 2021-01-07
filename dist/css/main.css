@@ -169,7 +169,7 @@ main {
   grid-template-columns: repeat(2, 1fr);
   gap: 40px 30px;
   padding: .5em;
-  margin: 30px; }
+  margin-top: 40px; }
   .education-info .company-logo {
     width: 70px;
     height: 70px;
@@ -179,6 +179,14 @@ main {
     .education-info .company-logo:hover {
       transform: translateY(-5px);
       transition: .3all; }
+  .education-info .school-name {
+    text-align: center; }
+  .education-info .education-year {
+    text-align: center;
+    margin: 0;
+    color: #eece1a; }
+  .education-info .education-desc {
+    padding: 0px 25px; }
   .education-info .education-1 {
     grid-area: edu1; }
   .education-info .education-2 {
@@ -186,7 +194,8 @@ main {
   .education-info .education {
     background: linear-gradient(to bottom, #3e5151, #decba4);
     padding: .8rem;
-    border-bottom: #eece1a 25px solid; }
+    border-bottom: #eece1a 25px solid;
+    position: relative; }
 
 .about-info {
   display: grid;
@@ -411,7 +420,7 @@ input[type='submit']:hover {
   position: absolute;
   bottom: 0px;
   right: 0px;
-  padding: 1pxnn;
+  padding: 1px;
   margin-top: 3em;
   background-color: rgba(255, 255, 255, 0.571); }
 
