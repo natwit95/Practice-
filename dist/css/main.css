@@ -97,6 +97,10 @@
 * {
   box-sizing: border-box; }
 
+#about, #blog, #work, #contact {
+  max-width: 1430px;
+  margin: 0 auto; }
+
 body {
   background: linear-gradient(to bottom, #3e5151, #decba4);
   color: #fff;
@@ -169,7 +173,8 @@ main {
   grid-template-columns: repeat(2, 1fr);
   gap: 40px 30px;
   padding: .5em;
-  margin-top: 40px; }
+  margin: 40px 0px;
+  text-align: center; }
   .education-info .company-logo {
     width: 70px;
     height: 70px;
@@ -179,10 +184,7 @@ main {
     .education-info .company-logo:hover {
       transform: translateY(-5px);
       transition: .3all; }
-  .education-info .school-name {
-    text-align: center; }
   .education-info .education-year {
-    text-align: center;
     margin: 0;
     color: #eece1a; }
   .education-info .education-desc {

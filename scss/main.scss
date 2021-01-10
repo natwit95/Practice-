@@ -5,6 +5,11 @@
 * {
     box-sizing: border-box;
 }
+
+#about, #blog, #work, #contact{
+    max-width: 1430px;
+    margin: 0 auto;
+}
 body {
     @include background;
     background: $test-image;
@@ -56,7 +61,6 @@ header {
 
 main {
     padding: 4.2rem;
-    // height: 100%;
     min-height: calc(100vh - 60px);
     .stack {
             font-size: 2.4rem;
@@ -92,19 +96,14 @@ main {
     grid-template-columns: repeat(2,  1fr);
     gap: 40px 30px;
     padding: .5em;
-    margin-top: 40px;
+    margin: 40px 0px;
+    text-align: center;
 
     .company-logo {
         @include bio-img
     }
-    .school-name  {
-        text-align: center;
-        // position: relative;
-        // bottom: 18px;
-        
-    }
+
     .education-year {
-        text-align: center;
         margin: 0;
         color: $secondary-color;
     }
