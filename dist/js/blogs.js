@@ -13,8 +13,6 @@ function fetchBlogs() {
 }
 
 function displayBlog(data) {
-	
-
 	data.items.forEach((blog) => {
 		// console.log(blog)
 		let eachBlog = document.createElement("div");

@@ -404,6 +404,12 @@ input[type='submit']:hover {background-color:darken(gray,5%);}
     margin-top: 3em;
     background-color: rgba(255, 255, 255, 0.571);
   
+      &:hover {
+        background: $secondary-color;
+        color: set-text-color
+        ($secondary-color);
+
+    }
     
 }
 
