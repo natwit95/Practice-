@@ -79,25 +79,25 @@
 		}
 	}
 	//Branding Side
-	&-branding {
-		background: $primary-color;
-		@include easeOut;
-		transform: translate3d(0, 100%, 0);
+	// &-branding {
+	// 	background: $primary-color;
+	// 	@include easeOut;
+	// 	transform: translate3d(0, 100%, 0);
 		
-		&.show {
-			//Slide in menu from bottom
-			transform: translate3d(0, 0, 0);
-		}
+	// 	&.show {
+	// 		//Slide in menu from bottom
+	// 		transform: translate3d(0, 0, 0);
+	// 	}
 
-		.portrait {
-			width: 250px;
-			height: 250px;
-			background: url('../img/portrait2.jpg');
-			background-size: cover;
-			border-radius: 50%;
-			border: solid 3px $secondary-color;
-		}
-	}
+	// 	.portrait {
+	// 		width: 250px;
+	// 		height: 250px;
+	// 		background: url('../img/portrait2.jpg');
+	// 		background-size: cover;
+	// 		border-radius: 50%;
+	// 		border: solid 3px $secondary-color;
+	// 	}
+	// }
 	.nav-item {
 		transform:  translate3d(600px, 0, 0);
 		@include easeOut;
