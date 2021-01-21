@@ -58,7 +58,6 @@
       color: #eece1a; }
   .menu .nav-link {
     display: inline-block;
-    position: relative;
     font-size: 30px;
     text-transform: uppercase;
     padding: .8rem 0;
@@ -448,17 +447,12 @@ input[type='submit']:hover {
     div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
   .menu.nav {
-    height: 75vh;
+    height: 100vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 25px; }
   .menu-branding {
-    height: 25vh;
+    height: 0vh;
     transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
-      background: url("../img/portrait2.jpg");
-      width: 150px;
-      height: 150px;
-      background-size: cover; }
   .nav-link {
     top: -15vh; }
   .about-info {
